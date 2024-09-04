@@ -1,0 +1,130 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    height: 100vh;
+    gap: 20px;
+  }
+  .uno {
+    grid-column: 1 ;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(214, 63, 181);
+  }
+  .dos {
+    grid-column: 2/ 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    font-size: 30PX;
+    background-color: cornflowerblue;
+  }
+  .tres {
+    grid-column: 1;
+    grid-row: 2/ 3;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(190, 133, 10);
+    
+  }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        padding: 10px;
+        border: none;
+        border-radius: 100px;
+        width: 50%;
+        background-color: aqua;
+    }
+
+  .cuatro {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    background-color: rgb(56, 185, 175);
+    font-size: 15px;
+    
+
+  }
+
+  .cuatro .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.img1{
+    width: 20%;
+    height: 80px;
+    display: flex;
+    margin-left: 100px;
+    margin-top:-20px ;
+    
+}
+.img2{
+    width: 20%;
+    height: 80px;
+    display: flex;
+    margin-left: 800px;
+    margin-top:-90px ;
+}
+.img3{
+    width: 20%;
+    height: 80px;
+    display: flex;
+    margin-left: 500px;
+    margin-top:-90px ;
+    
+}
+
+  .cinco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+   
+    background-color: rgb(237, 252, 25);
+  } 
+  .cinco img{
+    border-radius: 100%;
+  }
+  .seis {
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    background-color: blue;
+  }
+  .siete{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    background-color: blue;
+  }
+  .ocho{
+    background-color: cornflowerblue;
+  }
+  .nueve{
+    background-color: cornflowerblue;
+  }
+  .diez{
+    background-color: blue;
+  }
+  .once{
+    background-color: blue;
+  }
+  .doce{
+    background-color: blue;
+  }
