@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: grid; /* Activar Grid */
+    grid-template-columns: 150px 1fr; /* Logo y Header en dos columnas */
+    grid-template-rows: auto auto auto auto auto; /* Filas definidas */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    height: 100vh;
+}
+
+/* Estilo para el logo */
+.logo {
+    grid-column: 1/ 2; /* Primera columna */
+    grid-row: 1; /* Primera fila */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.logo img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+/* Estilo para el header */
+.header {
+    grid-column: 2 / 3; /* Segunda columna */
+    grid-row: 1; /* Primera fila */
+    background-color: #8886e7;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para el nav */
+.nav {
+    grid-column: 2/ 3; /* Nav ocupa dos columnas */
+    grid-row: 2; /* Segunda fila */
+    background-color: #333;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+}
+
+.nav li {
+    margin: 0 15px; /* Espaciado entre los enlaces */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección principal */
+.main-content {
+    grid-column: 1 / 3; /* Ocupa dos columnas */
+    grid-row: 3; /* Tercera fila */
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Parte izquierda y principal */
+    gap: 10px; /* Espacio entre la parte izquierda y la principal */
+    background-color: #eee;
+    padding: 20px;
+}
+
+/* Parte izquierda de la sección */
+.left-side {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.left-side{
+    margin-bottom: 20px;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    width: 50%;
+    background-color: aqua;
+}
+/* Parte principal de la sección */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espacio entre el título y la galería */
+}
+
+/* Estilo del título */
+.main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Galería de imágenes */
+.image-gallery {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    width: 100%; /* Anchura total */
+    max-width: 800px; /* Limitar la anchura máxima */
+}
+
+/* Estilo de las imágenes */
+.image-gallery img {
+    width: 100%; /* Ancho al 100% del contenedor */
+    max-width: 150px; /* Limitar el ancho de las imágenes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las imágenes */
+}
+
+/* Tres columnas con espacio */
+.three-columns {
+    grid-column: 1 / 3; /* Ocupa dos columnas */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    gap: 10px; /* Espacio entre los divs */
+}
+
+/* Estilo para cada div dentro de las tres columnas */
+.box {
+    background-color: #8886e7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.box img{
+    width:250px ;
+    border-radius: 50%;
+}
+.contenido {
+	display: flex;
+    justify-content: space-between;
+	width: 80%;
+	margin: auto;
+	margin-top: 50px;
+}
+.contenido .articulo {
+	width: 70%;
+	margin:auto;
+    flex-direction: column;
+}
+.contenido .articulo div {
+	width: 90%;
+	padding: 15px;
+	background-color: rgb(161, 158, 158);
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+.contenido .articulo iframe {
+	width: 200px;
+	border-radius: 15px;
+}
+
+
+.contenido .secundario {
+	width: 30%;
+}
+.contenido .secundario p {
+	background-color: rgb(161, 158, 158);
+	border-radius: 15px;
+	padding: 30px;
+	height: 700px;
+}
+
+/*footer*/
+.footer-space {
+    background: rgb(161, 158, 158);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    grid-column: 1/-1;
+    height: 420px;
+}
+
+.piedepagina {
+	background-color: #0a476b;
+	margin-top: 5000px;
+}
+.piedepagina p {
+	padding: 100px;
+}
+.footer {
+    display: flex;               /* Organiza los divs en fila */
+    justify-content: space-between; /* Distribuye el espacio entre las partes */
+    padding: 20px;
+    background-color: yellow;      /* Color de fondo del footer */
+    color: white;                /* Color del texto */
+}
+
+.footer-section {
+    flex: 1;                     /* Cada parte ocupa el mismo espacio */
+    padding: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color:rgb(161, 158, 158);
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color:black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color:black;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color:rgb(161, 158, 158);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
