@@ -170,6 +170,9 @@ button{
     width:250px ;
     border-radius: 50%;
 }
+
+
+
 .contenido {
 	display: flex;
     justify-content: space-between;
@@ -210,6 +213,9 @@ button{
 	padding: 30px;
 	height: 700px;
 }
+
+
+
 
 /*footer*/
 .footer-space {

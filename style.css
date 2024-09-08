@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(161, 158, 158);
 }
 
 /* Contenedor principal */
@@ -18,7 +20,7 @@ body {
 .logo {
   grid-column: 1/ 2; /* Primera columna */
   grid-row: 1; /* Primera fila */
-  background-color: #333;
+  background-color: rgb(161, 158, 158);
   color: white;
   padding: 10px;
   text-align: center;
@@ -38,13 +40,14 @@ body {
 .header {
   grid-column: 2 / 3; /* Segunda columna */
   grid-row: 1; /* Primera fila */
-  background-color: #8886e7;
+  background-color: #3d5775;
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5% ;
 }
 
 /* Estilo para el nav */
@@ -53,6 +56,7 @@ body {
   grid-row: 2; /* Segunda fila */
   background-color: #333;
   color: white;
+  padding:15px;
 }
 
 .nav ul {
@@ -79,7 +83,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 3fr; /* Parte izquierda y principal */
   gap: 10px; /* Espacio entre la parte izquierda y la principal */
-  background-color: #eee;
+  background-color: rgb(161, 158, 158);
   padding: 20px;
 }
 
@@ -90,14 +94,15 @@ body {
 
 /* Parte izquierda de la sección */
 .left-side {
-  background-color: #f0f0f0;
+  background-color: #3d5775;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #92a9d3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  border-radius: 10%;
 
 }
 .left-side{
@@ -114,7 +119,13 @@ button{
   border: none;
   border-radius: 100px;
   width: 50%;
-  background-color: aqua;
+  background-color: rgb(161, 158, 158);
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
 }
 /* Parte principal de la sección */
 .main {
@@ -158,21 +169,29 @@ button{
 
 /* Estilo para cada div dentro de las tres columnas */
 .box {
-  background-color: #8886e7;
-  color: rgb(17, 17, 17);
-  text-align: center;
-  padding: 20px;
-  font-size: 18px;
-  border-radius: 5px;
+  background-color: #3d5775; /* Fondo blanco para mayor contraste */
+  color: black; /* Texto en color gris oscuro para mejor legibilidad */
+  text-align: justify; /* Justificar texto para alineación limpia */
+  padding: 30px; /* Más espacio interno para el texto */
+  font-size: 17px; /* Tamaño de fuente más legible */
+  border-radius: 10px; /* Bordes más redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar */
   display: flex;
+  flex-direction: column; /* Alineación vertical del contenido */
   justify-content: center;
   align-items: center;
+  line-height: 1.6; /* Mayor espacio entre líneas */
+  font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+}
 
+
+.box img {
+  width: 150px; /* Tamaño más pequeño para la imagen */
+  border-radius: 50%; /* Imágenes circulares */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
 }
-.box img{
-  width:250px ;
-  border-radius: 50%;
-}
+
 .contenido {
 display: flex;
   justify-content: space-between;
@@ -214,16 +233,33 @@ padding: 30px;
 height: 700px;
 }
 
+.contenido .articulo a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  width: 50%;
+  background-color: #3d5775;
+}
+
 /*footer*/
 .footer-space {
-  background: rgb(161, 158, 158);
+  background: #3d5775;
   color: white;
-  text-align: center;
   padding: 20px;
   font-size: 18px;
   border-radius: 5px;
   grid-column: 1/-1;
   height: 420px;
+}
+
+.footer-space .box{
+  background-color: #3d5775;
 }
 
 .piedepagina {
@@ -252,7 +288,7 @@ padding: 100px;
 
 .pie-pagina{
   width: 100%;
-  background-color:rgb(161, 158, 158);
+  background-color:#3d5775;
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -298,7 +334,7 @@ padding: 100px;
   color: aqua;
 }
 .pie-pagina .grupo-2{
-  background-color:rgb(161, 158, 158);
+  background-color:#3d5775;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
